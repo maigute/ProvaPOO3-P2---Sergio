@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.provapoo3.controller.MainController">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <children>
+        <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu text="Cadastros">
+                    <items>
+                        <MenuItem onAction="#handleCadastroCursos" text="Cursos" />
+                        <MenuItem onAction="#handleCadastroDisciplinas" text="Disciplinas" />
+                        <MenuItem onAction="#handleCadastroProfessores" text="Professores" />
+                        <MenuItem onAction="#handleCadastroTurmas" text="Turmas" />
+                    </items>
+                </Menu>
+                <Menu text="Ajuda">
+                    <items>
+                        <MenuItem text="Sobre" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <VBox alignment="CENTER" spacing="20.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+            <Label styleClass="header-label" style="-fx-font-size: 32px; -fx-text-fill: -fx-primary-color;" text="Sistema Acadêmico" />
+            <Label style="-fx-font-size: 16px; -fx-text-fill: -fx-text-muted;" text="Bem-vindo. Utilize o menu superior para gerenciar os cadastros." />
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>
